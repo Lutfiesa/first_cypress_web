@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('template spec', () => {
   beforeEach ('Akses Web', () => {
     cy.visit('https://demoqa.com/')
@@ -9,4 +11,5 @@ describe('template spec', () => {
     cy.get('#rightClickBtn').rightclick()
     cy.get('.col-md-6 > :nth-child(2) > :nth-child(3) > .btn').click()
   })
+
 })
